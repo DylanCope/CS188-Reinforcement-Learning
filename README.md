@@ -180,7 +180,7 @@ Here are the optimal policy types you should attempt to produce:
 
 To check your answers, run the autograder:
 
-`python autograder.py -q q`
+`python autograder.py -q q3`
 
 `question3a()` through `question3e()` should each return a 3-item tuple of (discount, noise, living reward) in analysis.py.
 

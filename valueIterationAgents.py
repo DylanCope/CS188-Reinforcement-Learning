@@ -86,12 +86,11 @@ class ValueIterationAgent(ValueEstimationAgent):
           value function stored in self.values.
         """
 
-        def futureRewardIf(s, a, s_):
+        def rewardIf(s, a, s_):
             return self.mdp.getReward(s, a, s_) + self.discount*self.getValue(s_)
 
         statesAndProbs = self.mdp.getTransitionStatesAndProbs(state, action)
-        return sum(p * futureRewardIf(state, action, s)
-                   for s, p in statesAndProbs)
+        return sum(p * rewardIf(state, action, s) for s, p in statesAndProbs)
 
     def computeActionFromValues(self, state):
         """
