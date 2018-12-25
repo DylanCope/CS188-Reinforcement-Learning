@@ -32,6 +32,8 @@ import util
 from learningAgents import ValueEstimationAgent
 import collections
 
+from itertools import cycle
+
 
 class ValueIterationAgent(ValueEstimationAgent):
     """
@@ -62,17 +64,16 @@ class ValueIterationAgent(ValueEstimationAgent):
         self.values = util.Counter()  # A Counter is a dict with default 0
         self.runValueIteration()
 
+    def maxQ(self, s):
+        actions = self.mdp.getPossibleActions(s)
+        qs = (self.computeQValueFromValues(s, a) for a in actions)
+        return max(qs, default=0)
+
     def runValueIteration(self):
-
-        def maxQ(s):
-            actions = self.mdp.getPossibleActions(s)
-            qs = (self.computeQValueFromValues(s, a) for a in actions)
-            return max(qs, default=0)
-
         self.values = util.Counter()
         states = self.mdp.getStates()
         for k in range(self.iterations):
-            self.values = util.Counter({s: maxQ(s) for s in states})
+            self.values = util.Counter({s: self.maxQ(s) for s in states})
 
     def getValue(self, state):
         """
@@ -144,7 +145,11 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
         ValueIterationAgent.__init__(self, mdp, discount, iterations)
 
     def runValueIteration(self):
-        "*** YOUR CODE HERE ***"
+        states = cycle(self.mdp.getStates())
+        for i in range(self.iterations):
+            state = next(states)
+            if not self.mdp.isTerminal(state):
+                self.values[state] = self.maxQ(state)
 
 
 class PrioritizedSweepingValueIterationAgent(AsynchronousValueIterationAgent):
