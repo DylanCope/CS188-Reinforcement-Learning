@@ -235,8 +235,8 @@ For this project, you will implement a simplified version of the standard priori
    * Push `s` into the priority queue with priority `-diff` (note that this is negative). We use a negative because the priority queue is a min heap, but we want to prioritize updating states that have a higher error.
 * For iteration in `0, 1, 2, ..., self.iterations - 1`, do:
 If the priority queue is empty, then terminate.
-Pop a state s off the priority queue.
-   * Update s's value (if it is not a terminal state) in self.values.
+Pop a state `s` off the priority queue.
+   * Update `s`'s value (if it is not a terminal state) in `self.values`.
    * For each predecessor `p` of `s`, do:
        * Find the absolute value of the difference between the current value of `p` in `self.values` and the highest Q-value across all possible actions from `p` (this represents what the value should be); call this number `diff`. Do NOT update `self.values[p]` in this step.
        * If `diff > theta`, push `p` into the priority queue with priority `-diff` (note that this is negative), as long as it does not already exist in the priority queue with equal or lower priority. As before, we use a negative because the priority queue is a min heap, but we want to prioritize updating states that have a higher error.
