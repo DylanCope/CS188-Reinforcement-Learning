@@ -1,4 +1,4 @@
-Starting on 12-26 at 17:00:01
+Starting on 12-26 at 19:41:10
 
 Question q1
 ===========
@@ -91,102 +91,102 @@ Reinforcement Learning Status:
 	Completed 100 out of 2000 training episodes
 	Average Rewards over all training: -511.06
 	Average Rewards for last 100 episodes: -511.06
-	Episode took 1.43 seconds
+	Episode took 0.98 seconds
 Reinforcement Learning Status:
 	Completed 200 out of 2000 training episodes
 	Average Rewards over all training: -501.59
 	Average Rewards for last 100 episodes: -492.12
-	Episode took 1.98 seconds
+	Episode took 1.52 seconds
 Reinforcement Learning Status:
 	Completed 300 out of 2000 training episodes
 	Average Rewards over all training: -461.90
 	Average Rewards for last 100 episodes: -382.53
-	Episode took 2.14 seconds
+	Episode took 1.64 seconds
 Reinforcement Learning Status:
 	Completed 400 out of 2000 training episodes
 	Average Rewards over all training: -442.02
 	Average Rewards for last 100 episodes: -382.38
-	Episode took 2.33 seconds
+	Episode took 1.62 seconds
 Reinforcement Learning Status:
 	Completed 500 out of 2000 training episodes
 	Average Rewards over all training: -423.70
 	Average Rewards for last 100 episodes: -350.42
-	Episode took 2.24 seconds
+	Episode took 1.69 seconds
 Reinforcement Learning Status:
 	Completed 600 out of 2000 training episodes
 	Average Rewards over all training: -404.53
 	Average Rewards for last 100 episodes: -308.67
-	Episode took 2.46 seconds
+	Episode took 1.65 seconds
 Reinforcement Learning Status:
 	Completed 700 out of 2000 training episodes
 	Average Rewards over all training: -391.36
 	Average Rewards for last 100 episodes: -312.34
-	Episode took 2.70 seconds
+	Episode took 1.85 seconds
 Reinforcement Learning Status:
 	Completed 800 out of 2000 training episodes
 	Average Rewards over all training: -373.74
 	Average Rewards for last 100 episodes: -250.41
-	Episode took 2.53 seconds
+	Episode took 1.69 seconds
 Reinforcement Learning Status:
 	Completed 900 out of 2000 training episodes
 	Average Rewards over all training: -346.62
 	Average Rewards for last 100 episodes: -129.62
-	Episode took 2.58 seconds
+	Episode took 1.79 seconds
 Reinforcement Learning Status:
 	Completed 1000 out of 2000 training episodes
 	Average Rewards over all training: -314.52
 	Average Rewards for last 100 episodes: -25.65
-	Episode took 2.41 seconds
+	Episode took 1.64 seconds
 Reinforcement Learning Status:
 	Completed 1100 out of 2000 training episodes
 	Average Rewards over all training: -276.25
 	Average Rewards for last 100 episodes: 106.48
-	Episode took 2.34 seconds
+	Episode took 1.64 seconds
 Reinforcement Learning Status:
 	Completed 1200 out of 2000 training episodes
 	Average Rewards over all training: -242.71
 	Average Rewards for last 100 episodes: 126.23
-	Episode took 2.66 seconds
+	Episode took 1.96 seconds
 Reinforcement Learning Status:
 	Completed 1300 out of 2000 training episodes
 	Average Rewards over all training: -215.12
 	Average Rewards for last 100 episodes: 115.89
-	Episode took 2.39 seconds
+	Episode took 1.74 seconds
 Reinforcement Learning Status:
 	Completed 1400 out of 2000 training episodes
 	Average Rewards over all training: -184.26
 	Average Rewards for last 100 episodes: 216.95
-	Episode took 2.55 seconds
+	Episode took 1.68 seconds
 Reinforcement Learning Status:
 	Completed 1500 out of 2000 training episodes
 	Average Rewards over all training: -156.15
 	Average Rewards for last 100 episodes: 237.37
-	Episode took 2.36 seconds
+	Episode took 1.70 seconds
 Reinforcement Learning Status:
 	Completed 1600 out of 2000 training episodes
 	Average Rewards over all training: -130.92
 	Average Rewards for last 100 episodes: 247.56
-	Episode took 2.32 seconds
+	Episode took 1.66 seconds
 Reinforcement Learning Status:
 	Completed 1700 out of 2000 training episodes
 	Average Rewards over all training: -108.08
 	Average Rewards for last 100 episodes: 257.32
-	Episode took 2.41 seconds
+	Episode took 1.71 seconds
 Reinforcement Learning Status:
 	Completed 1800 out of 2000 training episodes
 	Average Rewards over all training: -92.82
 	Average Rewards for last 100 episodes: 166.56
-	Episode took 2.42 seconds
+	Episode took 1.66 seconds
 Reinforcement Learning Status:
 	Completed 1900 out of 2000 training episodes
 	Average Rewards over all training: -74.45
 	Average Rewards for last 100 episodes: 256.27
-	Episode took 2.80 seconds
+	Episode took 1.78 seconds
 Reinforcement Learning Status:
 	Completed 2000 out of 2000 training episodes
 	Average Rewards over all training: -58.38
 	Average Rewards for last 100 episodes: 247.01
-	Episode took 2.54 seconds
+	Episode took 1.69 seconds
 Training Done (turning off epsilon and alpha)
 ---------------------------------------------
 Pacman emerges victorious! Score: 503
@@ -293,7 +293,7 @@ Reinforcement Learning Status:
 	Completed 100 test episodes
 	Average Rewards over testing: 499.64
 	Average Rewards for last 100 episodes: 499.64
-	Episode took 2.63 seconds
+	Episode took 1.79 seconds
 Average Score: 499.64
 Scores:        503.0, 495.0, 503.0, 499.0, 495.0, 499.0, 503.0, 503.0, 499.0, 503.0, 503.0, 495.0, 503.0, 503.0, 503.0, 495.0, 495.0, 503.0, 495.0, 503.0, 495.0, 495.0, 503.0, 499.0, 503.0, 495.0, 499.0, 499.0, 499.0, 495.0, 499.0, 499.0, 495.0, 495.0, 503.0, 499.0, 499.0, 499.0, 503.0, 495.0, 503.0, 503.0, 503.0, 503.0, 503.0, 503.0, 503.0, 503.0, 503.0, 495.0, 495.0, 503.0, 503.0, 503.0, 495.0, 499.0, 503.0, 499.0, 503.0, 499.0, 495.0, 499.0, 503.0, 503.0, 499.0, 495.0, 499.0, 503.0, 495.0, 495.0, 499.0, 499.0, 499.0, 503.0, 495.0, 499.0, 503.0, 495.0, 503.0, 503.0, 495.0, 503.0, 503.0, 503.0, 503.0, 499.0, 499.0, 495.0, 495.0, 495.0, 495.0, 503.0, 499.0, 503.0, 495.0, 503.0, 499.0, 503.0, 495.0, 503.0
 Win Rate:      100/100 (1.00)
@@ -311,13 +311,16 @@ Record:        Win, Win, Win, Win, Win, Win, Win, Win, Win, Win, Win, Win, Win, 
 Question q10
 ============
 
-*** Method not implemented: getQValue at line 172 of qlearningAgents.py
-*** FAIL: Terminated with a string exception.
+*** PASS: test_cases\q10\1-tinygrid.test
+*** PASS: test_cases\q10\2-tinygrid-noisy.test
+*** PASS: test_cases\q10\3-bridge.test
+*** PASS: test_cases\q10\4-discountgrid.test
+*** PASS: test_cases\q10\5-coord-extractor.test
 
-### Question q10: 0/3 ###
+### Question q10: 3/3 ###
 
 
-Finished at 17:00:55
+Finished at 19:41:49
 
 Provisional grades
 ==================
@@ -330,9 +333,9 @@ Question q6: 4/4
 Question q7: 2/2
 Question q8: 1/1
 Question q9: 1/1
-Question q10: 0/3
+Question q10: 3/3
 ------------------
-Total: 22/25
+Total: 25/25
 
 Your grades are NOT yet registered.  To register your grades, make sure
 to follow your instructor's guidelines to receive credit on your project.

@@ -19,6 +19,7 @@ from featureExtractors import *
 import random
 import util
 import math
+from itertools import starmap
 
 
 class QLearningAgent(ReinforcementAgent):
@@ -163,20 +164,29 @@ class ApproximateQAgent(PacmanQAgent):
     def getWeights(self):
         return self.weights
 
+    def getWeight(self, feature):
+        weights = self.getWeights()
+        if feature not in weights:
+            weights[feature] = 0.0
+        return weights[feature]
+
     def getQValue(self, state, action):
         """
           Should return Q(state,action) = w * featureVector
           where * is the dotProduct operator
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        features = self.featExtractor.getFeatures(state, action)
+        return sum(features[f] * self.getWeight(f) for f in features)
 
     def update(self, state, action, nextState, reward):
         """
            Should update your weights based on transition
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        diff = (reward + self.discount *
+                self.getValue(nextState)) - self.getQValue(state, action)
+        features = self.featExtractor.getFeatures(state, action)
+        for f in self.weights:
+            self.weights[f] += self.alpha * diff * features[f]
 
     def final(self, state):
         "Called at the end of each game."
@@ -186,5 +196,4 @@ class ApproximateQAgent(PacmanQAgent):
         # did we finish training?
         if self.episodesSoFar == self.numTraining:
             # you might want to print your weights here for debugging
-            "*** YOUR CODE HERE ***"
             pass
